@@ -14,6 +14,11 @@ function App() {
           continue
         }
         finalPort.push(port)
+        /* listenClickerEvent((eventNum, deviceID) => {
+          console.log(count, 'he')
+          console.log(deviceID)
+          console.log(eventNum)
+        }) */
         console.log('finalPort: ', finalPort)
       }
     })

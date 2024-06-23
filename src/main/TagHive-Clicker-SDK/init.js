@@ -10,7 +10,8 @@ let Node = {
 let MAX_BUFFER = 134217728 // Setting the maximum buffer size for child process execution
 
 // Initializing a dongle
-function init(execName, callback) {
+export function init(execName, callback) {
+  console.log('hello i am in init')
   app.on('ready', async () => {
     // Event listener for when the Electron app is ready
     const gotTheLock = app.requestSingleInstanceLock() // Checking if the app has acquired the single instance lock
